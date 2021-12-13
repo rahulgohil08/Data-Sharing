@@ -86,7 +86,10 @@ public class TeacherAssignmentActivity extends AppCompatActivity implements Assi
 
     @Override
     public void onView(Assignment assignment) {
-
+//        openActivity(TeacherSubmissionActivity.class);
+        Intent intent = new Intent(context,TeacherSubmissionActivity.class);
+        intent.putExtra("assignment_id",assignment.getAssignmentId());
+        startActivity(intent);
     }
 
     @Override

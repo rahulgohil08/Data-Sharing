@@ -15,6 +15,9 @@ public interface AssignmentDao {
     @Query("SELECT * FROM assignment")
     List<Assignment> getAllAssignments();
 
+    @Query("SELECT * FROM assignment WHERE assignmentId = :id")
+    Assignment getAssignment(int id);
+
     @Query("SELECT count(assignmentId) FROM assignment")
     int getAssignmentCount();
 

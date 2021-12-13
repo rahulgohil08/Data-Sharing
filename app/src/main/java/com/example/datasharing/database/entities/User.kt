@@ -11,7 +11,7 @@ data class User(
     @ColumnInfo(name = "email")
     val email: String,
     @ColumnInfo(name = "password")
-    val lastName: String
+    val password: String
 ) {
     @PrimaryKey(autoGenerate = true)
     var userId: Int = 0

@@ -31,6 +31,8 @@
         <activity android:name=".CreateAssignmentActivity" />
         <activity android:name=".TeacherAssignmentActivity" />
         <activity android:name=".StudentAssignmentActivity" />
+        <activity android:name=".CreateSubmissionActivity" />
+        <activity android:name=".TeacherSubmissionActivity" />
 
 
         <provider
